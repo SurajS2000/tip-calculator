@@ -1,0 +1,166 @@
+ @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Space+Mono:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono",sans-serif;
+}
+body{
+    background-color:  hsl(185, 41%, 84%);
+    height: 100dvh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0px 20px 20px;
+}
+.container1 label{
+    padding-top: 20px;
+    font-size: 10px;
+    color: hsl(186, 14%, 43%);
+}
+.text1{
+    background-image: url(icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: 10px;
+    background-color: hsl(180, 100%, 96%);
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+}
+.text2{
+    background-image: url(icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: 10px;
+    background-color: hsl(180, 100%, 96%);
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+}
+.container1 ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.btn{
+    background-color:  hsl(183, 100%, 15%);
+    color: #fff;
+    border: 0;
+    width: 70px;
+    border-radius: 3px;
+    padding:5px;
+}
+#custom{
+    background-color: hsl(180, 100%, 96%);
+    color: hsl(186, 14%, 43%);
+    border: 0;
+    width: 70px;
+    padding:5px 5px 5px;
+    border-radius: 3px;
+    text-align: right;
+}
+.custom::placeholder{
+    text-align: center;
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.container2{
+    background-color: hsl(183, 100%, 15%);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.totalContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+h1{
+    font-size: 10px;
+    color: #fff;
+}
+.innerContainer p{
+    font-size: 8px;
+    color: hsl(184, 14%, 56%);
+}
+.innerContainer span,.innerContainer h2{
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+}
+.reset{
+    width: 100%;
+    background-color:hsl(172, 67%, 45%);
+    border: 0;
+    padding: 6px;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+}
+.btn:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.btn:hover{
+    background-color: hsl(172, 75%, 69%);
+    color: hsl(183, 100%, 15%);
+}
+.reset:hover{
+    background-color: hsl(172, 75%, 69%);
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.label3{
+    display: flex;
+    justify-content: space-between;
+}
+.error{
+    color: red;
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        flex-direction: column;
+    }
+}
